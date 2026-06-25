@@ -1,0 +1,156 @@
+.connect-form {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.connect-form-cont {
+  position: relative;
+}
+
+.connect-form-cont h1 {
+  font-size: 74px;
+  font-weight: 500;
+}
+
+.connect-form-cont img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.form {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 3rem 0;
+  width: 80%;
+  color: #fff;
+}
+
+.form-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-left h2 {
+  font-size: 52px;
+  font-weight: 500;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(267deg, #da7c25 70%, #b923e1 100%);
+}
+
+.form-left p {
+  font-size: 18px;
+}
+
+.form-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-info img {
+  width: 27px;
+}
+
+.form-right {
+  width: 60%;
+  flex: 1;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: #32323c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-item input:focus {
+  border: 2px solid #b923e1;
+}
+
+.form-item textarea {
+  width: 100%;
+  height: 250px;
+  padding: 1rem 1rem;
+  resize: vertical;
+  background-color: #32323c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-item textarea:focus {
+  border: 2px solid #b923e1;
+}
+
+.form-submit-btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  width: 250px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(267deg, #da7c25 20%, #b923e1 100%);
+}
+
+.form-submit-btn:hover {
+  transform: scale(1.07);
+}
+
+@media (max-width: 900px) {
+  .connect-form {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    gap: 5rem;
+    margin: 3rem 0;
+    width: 100%;
+  }
+  .form-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-left {
+    width: 100%;
+  }
+}
